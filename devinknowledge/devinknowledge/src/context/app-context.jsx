@@ -47,7 +47,6 @@ export const AppContextProvider = ({ children }) => {
   };
 
   const categories = sortByCategory();
-
   return (
     <ContextProvider value={{ filterTip, createTip, tips, categories }}>
       {children}
