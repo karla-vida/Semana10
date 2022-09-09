@@ -39,6 +39,7 @@ export const AppContextProvider = ({ children }) => {
     : allTips;
 
   const sortByCategory = () => {
+
     const categories = Array.from(new Set(allTips.map((tip) => tip.categoria)));
     return categories.map((catName) => {
       const count = allTips.filter((tip) => tip.categoria == catName).length;
@@ -47,6 +48,7 @@ export const AppContextProvider = ({ children }) => {
   };
 
   const categories = sortByCategory();
+  
   return (
     <ContextProvider value={{ filterTip, createTip, tips, categories }}>
       {children}
