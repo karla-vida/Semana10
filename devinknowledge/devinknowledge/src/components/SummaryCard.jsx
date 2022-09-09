@@ -7,7 +7,6 @@ export const SummaryCard = ({ title, count }) => {
     </div>
   );
 };
-
 SummaryCard.propTypes = {
   title: PropTypes.string.isRequired,
   count: PropTypes.number.isRequired,
