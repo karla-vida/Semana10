@@ -1,10 +1,12 @@
 import PropTypes from "prop-types";
 import React from "react";
 import { useForm } from "react-hook-form";
+
 import { useAppContext } from "../context/app-context";
 
 export const Sidebar = ({}) => {
   const { createTip } = useAppContext();
+  
   const { register, handleSubmit } = useForm();
 
   const handleCreateTip = (data) => {
