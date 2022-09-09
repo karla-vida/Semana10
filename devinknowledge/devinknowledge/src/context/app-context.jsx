@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 const appContext = React.createContext(null);
+
 const ContextProvider = appContext.Provider;
 
 export const useAppContext = () => {
